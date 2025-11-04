@@ -60,7 +60,18 @@ print("-------------------------------------------\n"
 # HINT: Create dictionary syntax is:
 # my_dict = {"key1": value1, "key2": value2, "key3": value3}
 
+found_item = {
+    "name": "Hand bag",
+    "colour": "Black",
+    "location": "Picadilly gardens",
+}
+print(found_item["name"])
+print(f"recorded:{found_item["name"]} ({found_item["colour"]}) found at {found_item["location"]}.")
 
+# found_item = {}
+# found_item["name"] = input("Please enter the item name: ")
+# found_item["colour"] = input("Please enter the item colour: ")
+# found_item["location"] = input("Please enter the item location: ")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -97,7 +108,19 @@ print("-------------------------------------------\n"
 # Item 2: phone (silver) - Found at: shopping centre
 #
 # Write your code below:
+found_items = []
+found_items.append(found_item)
+print(f"found_items list {found_items}")
+userWantsToAddItem = input("Do you want add another item: (Yes/No) ").lower()
+if userWantsToAddItem == "yes":
+    new_item_to_add = {}
+    new_item_to_add["name"] = input("Please enter the item name: ")
+    new_item_to_add["colour"] = input("Please enter the item colour: ")
+    new_item_to_add["location"] = input("Please enter the item location: ")
 
+    found_items.append(new_item_to_add)
+    print(found_items)
+    print(f"This item's name is: {new_item_to_add["name"]}.\nThis item's location is: {new_item_to_add["location"]}")
 # HINT: To access dictionary values, use: dictionary_name["key_name"]
 # Example: found_item["name"] gets the name value
 
