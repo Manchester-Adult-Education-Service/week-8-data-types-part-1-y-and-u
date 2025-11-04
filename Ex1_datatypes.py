@@ -60,7 +60,13 @@ print("-------------------------------------------\n"
 # HINT: Create dictionary syntax is:
 # my_dict = {"key1": value1, "key2": value2, "key3": value3}
 
-
+found_item = {
+    "name": "Hand bag",
+    "colour": "Black",
+    "location": "Picadilly gardens",
+}
+print(found_item["name"])
+print(f"recorded:{found_item["name"]} ({found_item["colour"]}) found at {found_item["location"]}.")
 
 # -------------------------------------------
 # SWAP COMPUTERS
